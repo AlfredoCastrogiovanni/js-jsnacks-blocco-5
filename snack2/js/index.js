@@ -8,9 +8,6 @@ const userList = [
     {nome: "Lara", cognome: "Verde", eta: 25}
 ];
 
-const newUserArray = userList.map( (user) => {
-    const isAbleToDrive = user.eta > 18;
-    return user = ` ${user.nome} ${user.cognome}, ${isAbleToDrive ? "Puo' guidare" : "Non puo' guidare"}`;
-});
+const newUserArray = userList.map( (user) => user = ` ${user.nome} ${user.cognome}, ${user.eta > 18 ? "Puo' guidare" : "Non puo' guidare"}`);
 
 console.log(newUserArray);
