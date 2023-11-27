@@ -8,3 +8,8 @@ const carList = [
 
 const gasolineCarList = carList.filter( (car) => car.powerFeed == "gasoline");
 const dieselCarList = carList.filter( (car) => car.powerFeed == "diesel");
+const otherCarList = carList.filter( (car) => car.powerFeed != "gasoline" && car.powerFeed != "diesel");
+
+console.log(gasolineCarList);
+console.log(dieselCarList);
+console.log(otherCarList);
